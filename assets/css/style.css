@@ -1,0 +1,12 @@
+img {
+    max-width: 1000px;
+}
+
+.today {
+    border: 1px solid black;
+    color: invert;
+}
+
+.nottoday {
+    display: none;
+}
