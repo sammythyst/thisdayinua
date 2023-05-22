@@ -1,21 +1,27 @@
-let uaVideos = [];
 // displays current date on page
 var thisdayinua = moment().format("MMMM Do");
 var display = document.getElementById('thisdayinua');
 display.innerHTML = thisdayinua;
 
 
-function fetchVideo() {
-    fetch("./assets/js/videos.json")
-        .then(response => response.json())
-        .then(data => listVideo(data));   
+// find and read video data from json file
+fetch("./assets/js/videos.json")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(videos) {
+        let uaVideos = document.querySelector("#videoDisplay");
+        let display = "";
+        for (let video of videos){
+            display += `
+                <h2>${video.title}</h2>
+                <p>${video.description}</p>
+            `;
+        }
 
-        console.log(uaVideos.title)
-}
+        uaVideos.innerHTML = display;
+    })
 
-function listVideo() {
-
-}
 
 
 // date in moment format MDD matches id
@@ -35,6 +41,5 @@ function anniversary() {
         })
     }
 
-fetchVideo();
-listVideo();
+
 anniversary();

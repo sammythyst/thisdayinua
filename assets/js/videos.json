@@ -1,14 +1,12 @@
-{
-    "uaVideo": [
-        {
-            "id": "520",
-            "title": "Title test",
-            "description": "description test"
-        },
-        {
-            "id": "521",
-            "title": "Title 521",
-            "description": "description 521"
-        }
-    ]
-}
+[
+    {
+        "id": 520,
+        "title": "Title test shouldn't display",
+        "description": "description test"
+    },
+    {
+        "id": 521,
+        "title": "Title 521",
+        "description": "description 521"
+    }
+]
