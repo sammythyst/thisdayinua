@@ -4,9 +4,10 @@ img {
 
 .today {
     border: 1px solid black;
-    color: invert;
+    color: lightgreen;
 }
 
 .nottoday {
-    display: none;
+    /* display: none; */
+    color: lightcoral;
 }

@@ -25,7 +25,7 @@ fetch("./assets/js/videos.json")
 
 
 // date in moment format MDD matches id
-function anniversary() {
+function displayByDate() {
     var thisDay = moment().format("MDD");
     var date = $(".date");
     
@@ -42,4 +42,4 @@ function anniversary() {
     }
 
 
-anniversary();
+displayByDate();
