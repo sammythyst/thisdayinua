@@ -13,7 +13,7 @@
 
 body {
     background: linear-gradient(90deg, black 0%, black 50%, white 50%, white 100%);
-    margin: 10px;
+    margin: 0px;
 }
 
 header {
@@ -27,7 +27,6 @@ h1 {
 }
 
 footer {
-    border-top: 1px solid black;
     display: flex;
     justify-content: center;
 }
