@@ -13,33 +13,19 @@ fetch("./assets/js/videos.json")
         let uaVideos = document.querySelector("#videoDisplay");
         let display = "";
         for (let video of videos){
-            display += `
-                <h2>${video.title}</h2>
-                <p>${video.description}</p>
-            `;
+            
+                var calendarDate = video.id;
+                var thisDay = moment().format("MDD");
+
+                if (calendarDate === thisDay) {
+                    display += `
+                        <div class="today">
+                            <h2>${video.title}</h2>
+                            <p>${video.description}</p>
+                        </div>
+                        `;
+                }
+            
+                uaVideos.innerHTML = display;
         }
-
-        uaVideos.innerHTML = display;
     })
-
-
-
-// date in moment format MDD matches id
-function displayByDate() {
-    var thisDay = moment().format("MDD");
-    var date = $(".date");
-    
-        date.each(function() {
-            var calendarDate = $(this).attr('id');
-            console.log(calendarDate, thisDay);
-
-            if (calendarDate === thisDay) {
-                $(this).addClass("today");
-            } else {
-                $(this).addClass("nottoday");
-            }
-        })
-    }
-
-
-displayByDate();
