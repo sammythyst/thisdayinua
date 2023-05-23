@@ -1,12 +1,14 @@
 [
     {
         "id": "522",
-        "title": "522 Title",
-        "description": "description test"
+        "thumbnail": "assets/img/5/22.png",
+        "title": "Mark Cooks Blindfolded While Ethan Guides Him Through FaceTime",
+        "description": "Umm... you probably shouldn't attempt to do this at home. In fact don't. Definitely do not do the this that we are doing. Definitely do not do. Don't."
     },
     {
         "id": "523",
-        "title": "523 Title",
-        "description": "description test"
+        "thumbnail": "assets/img/5/23.png",
+        "title": "We Play the Newlywed Game While Consuming That Which Will Kill the Other",
+        "description": "Mark and Ethan test how well they really know each other with the classic 1960's sensation known as the Newlywed Game. Also we consume each other's poisons."
     }
 ]
