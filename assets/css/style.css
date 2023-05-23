@@ -23,6 +23,7 @@ header {
 h1 {
     display: flex;
     justify-content: center;
+    letter-spacing: 4px;
 }
 
 footer {
