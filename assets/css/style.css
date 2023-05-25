@@ -8,7 +8,8 @@
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    padding: 10px 0px;
 }
 
 nav a {
@@ -19,10 +20,11 @@ nav a {
 body {
     background: linear-gradient(90deg, black 0%, black 50%, white 50%, white 100%);
     margin: 0px;
+    padding: 50px;
 }
 
 header {
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 h1 {
@@ -42,7 +44,6 @@ img {
 }
 
 .container {
-    margin: 20px;
     display: flex;
     justify-content: center;
 }

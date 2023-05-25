@@ -20,7 +20,6 @@ fetch("./assets/js/videos.json")
                 if (calendarDate === thisDay) {
                     display += `
                         <div>
-                            <h2 id="clock"></h2>
                             <img src="${video.thumbnail}" alt="${video.alt}">
                             <h2>${video.title}</h2>
                             <p>${video.description}</p>
