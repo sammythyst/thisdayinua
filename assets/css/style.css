@@ -20,7 +20,7 @@ nav a {
 body {
     background: linear-gradient(90deg, black 0%, black 50%, white 50%, white 100%);
     margin: 0px;
-    padding: 50px;
+    padding: 20px 50px;
 }
 
 header {
