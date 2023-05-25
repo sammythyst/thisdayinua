@@ -495,5 +495,75 @@
         "title": "5 Products to Grow Your Patchy Beard",
         "alt": "5 Products to Grow Your Patchy Beard",
         "description": "In their unending search for perfection, Mark and Ethan attempt to fix what may be their one and only flaw: their mediocre facial hair."
+    },
+    {
+        "id": "801",
+        "thumbnail": "assets/img/8/01.png",
+        "title": "Mark Teaches Ethan How to Play the Trumpet",
+        "alt": "Mark Teaches Ethan How to Play the Trumpet",
+        "description": "[No description given.]"
+    },
+    {
+        "id": "802",
+        "thumbnail": "assets/img/8/02.png",
+        "title": "Playing Cards: The World's Deadliest Weapon",
+        "alt": "Playing Cards: The World's Deadliest Weapon",
+        "description": "Playing cards: to some, a fun family game. To others: the deadliest weapon known to man."
+    },
+    {
+        "id": "803",
+        "thumbnail": "assets/img/8/03.png",
+        "title": "We Lubed Our Floor for a Sliding Competition",
+        "alt": "We Lubed Our Floor for a Sliding Competition",
+        "description": "Lube? Check. Socks? Check. Safety? Overrated! Let's get our slide on!"
+    },
+    {
+        "id": "804",
+        "thumbnail": "assets/img/8/04.png",
+        "title": "Breaking Glass With Our Screams",
+        "alt": "Breaking Glass With Our Screams",
+        "description": "No mere mortals are more qualified to shatter glass than two men who have spent years honing the craft of screaming at video games."
+    },
+    {
+        "id": "805",
+        "thumbnail": "assets/img/8/05.png",
+        "title": "This is Goodbye",
+        "alt": "This is Goodbye",
+        "description": "Only 100 days left. Will you make the most of it?"
+    },
+    {
+        "id": "806",
+        "thumbnail": "assets/img/8/06.png",
+        "title": "Mark and Ethan Share a Drink",
+        "alt": "Mark and Ethan Share a Drink",
+        "description": "For the first time ever, Mark and Ethan share a drink. A very special drink."
+    },
+    {
+        "id": "807",
+        "thumbnail": "assets/img/8/07.png",
+        "title": "The Wubble",
+        "alt": "The Wubble",
+        "description": "Bloonies are the worst children's toy ever invented. Can the mysterious Wubble make up for it's shortcomings? Unus Annus Toy Reviews is here to give you the exclusive scoop."
+    },
+    {
+        "id": "808",
+        "thumbnail": "assets/img/8/08.png",
+        "title": "Mark and Ethan Shave Chica",
+        "alt": "Mark and Ethan Shave Chica",
+        "description": "Coming at you hot and fresh with another wholesome dog video. This time Mark and Ethan steal Chica's one and only possession in this world... her fur."
+    },
+    {
+        "id": "809",
+        "thumbnail": "assets/img/8/09.png",
+        "title": "DO NOT TRY THIS UNDER ANY CIRCUMSTANCES",
+        "alt": "DO NOT TRY THIS UNDER ANY CIRCUMSTANCES",
+        "description": "No. Just no. Do not ever do this. We are certified idiots that have no credentials at all. Do not follow in the footsteps of our stupidity."
+    },
+    {
+        "id": "810",
+        "thumbnail": "assets/img/8/10.png",
+        "title": "Judging Your Terrible Unus Annus Ideas",
+        "alt": "Judging Your Terrible Unus Annus Ideas",
+        "description": "You think you've got what it takes to make an Unus Annus video huh? Pfft. You WISH you had the creative genius to come up with ideas as unique as \"10 Strange Products We Bought Off Amazon.\""
     }
 ]
