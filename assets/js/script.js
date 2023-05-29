@@ -37,28 +37,28 @@ fetch("./assets/js/videos.json")
         }
     })
 
-    // clock countdown
-    var countdownDate = new Date("November 14, 2023 00:00:00").getTime();
+// clock countdown
+var countdownDate = new Date("November 14, 2023 00:00:00").getTime();
 
-    var x = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countdownDate - now;
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countdownDate - now;
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // leading 0's
-        if (days < "10") { days = "0" + days; }
-        if (hours < "10") { hours = "0" + hours; }
-        if (minutes < "10") { minutes = "0" + minutes; }
-        if (seconds < "10") { seconds = "0" + seconds; }
+    // leading 0's
+    if (days < "10") { days = "0" + days; }
+    if (hours < "10") { hours = "0" + hours; }
+    if (minutes < "10") { minutes = "0" + minutes; }
+    if (seconds < "10") { seconds = "0" + seconds; }
 
-        document.getElementById("clock").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("clock").innerHTML = "00:00:00:00";
-        }
-    }, 1000);
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("clock").innerHTML = "00:00:00:00";
+    }
+}, 1000);
