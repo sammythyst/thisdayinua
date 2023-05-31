@@ -57,6 +57,21 @@ img {
     font-weight: bolder;
 }
 
+.searchDisplay {
+    width: 300px;
+    margin: 10px;
+}
+
+#videoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#searchVideo {
+    margin-bottom: 50px;
+}
+
 #clock {
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
