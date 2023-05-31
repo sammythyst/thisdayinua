@@ -15,14 +15,12 @@ fetch("./assets/js/videos.json")
         let display = "";
         for (let video of videos){
             
-                // reads 3 or 4 digit video id
+                // reads object id
                 var calendarDate = video.id;
-                // reads moment date as single 3 or 4 digit number 
-                var thisDay = moment().format("MDD");
+                // reads moment as MM/DD date 
+                var thisDay = moment().format("MM/DD");
 
-                // if video id strictly equals moment number, display object
-                // if date is june 27, 'thisDay' reads it as 627 and will strictly equal and display the video with the id 627
-                // days of the month are always double digit (01-09, 10-31), months are only double digit when applicable (1-12)
+                // if video id strictly equals moment date, display object
                 if (calendarDate === thisDay) {
                     display += `
                         <div>

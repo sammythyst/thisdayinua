@@ -7,7 +7,10 @@ searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
 
     const filteredVideos = uaVideos.filter(video => {
-        return video.title.toLowerCase().includes(searchString);
+        return (
+            video.title.toLowerCase().includes(searchString) ||
+            video.id.includes(searchString)
+        );
     });
     displayVideos(filteredVideos);
 });
@@ -31,6 +34,7 @@ const displayVideos = (videos) => {
             <div class="searchDisplay">
                 <img src="${video.thumbnail}" alt="${video.alt}">
                 <h2>${video.title}</h2>
+                <p>Date: ${video.id}</p>
             </div>
             `;
         })

@@ -69,7 +69,13 @@ img {
 }
 
 #searchVideo {
-    margin-bottom: 50px;
+    margin: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+#searchBar {
+    width: 350px;
 }
 
 #clock {
