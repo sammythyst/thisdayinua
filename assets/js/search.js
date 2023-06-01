@@ -34,12 +34,29 @@ const displayVideos = (videos) => {
             <div class="searchDisplay">
                 <img src="${video.thumbnail}" alt="${video.alt}">
                 <h2>${video.title}</h2>
-                <p>Date: ${video.id}</p>
+                    <div id="more">
+                        <p>Date: ${video.id}</p>
+                        <p>${video.description}</p>
+                    </div>
+                <button onclick="seeDetails()" id="button">See more</button>
             </div>
             `;
         })
         .join('');
         videoList.innerHTML = htmlString;
+};
+
+function seeDetails() {
+    var moreDetails = document.getElementById("more");
+    var button = document.getElementById("button");
+
+    if (moreDetails.style.display === "inline") {
+        button.innerHTML = "Read more";
+        moreDetails.style.display = "none";
+    } else {
+        button.innerHTML = "See less";
+        moreDetails.style.display = "inline";
+    }
 };
 
 loadVideos();

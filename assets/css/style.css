@@ -78,6 +78,10 @@ img {
     width: 350px;
 }
 
+#more {
+    display: none;
+}
+
 #clock {
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
