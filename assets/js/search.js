@@ -38,7 +38,6 @@ const displayVideos = (videos) => {
                         <p>Date: ${video.id}</p>
                         <p>${video.description}</p>
                     </div>
-                <button onclick="seeDetails()" id="button">See more</button>
             </div>
             `;
         })
