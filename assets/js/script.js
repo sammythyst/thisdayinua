@@ -36,7 +36,7 @@ fetch("./assets/js/videos.json")
     })
 
 // clock countdown
-var countdownDate = new Date("November 14, 2023 00:00:00").getTime();
+var countdownDate = new Date("November 14, 2024 00:00:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
