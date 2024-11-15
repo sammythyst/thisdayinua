@@ -36,13 +36,13 @@ fetch("./assets/js/videos.json")
     })
 
 // clock countdown
-var countdownDate = new Date("November 14, 2024 00:00:00").getTime();
+var countdownDate = new Date("November 14, 2025 00:00:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countdownDate - now;
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24) + 1);
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
