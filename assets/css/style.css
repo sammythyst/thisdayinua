@@ -93,3 +93,19 @@ img {
     max-width: 1000px;
     width: 100%;
 }
+
+#videoDisplay p {
+    line-height: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        line-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    * {
+        line-height: 40px;
+    }
+}
