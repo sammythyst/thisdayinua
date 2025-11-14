@@ -36,15 +36,15 @@ fetch("./assets/js/videos.json")
     })
 
 // clock countdown
-var countdownDate = new Date("November 14, 2025 00:00:00").getTime();
+var countdownDate = new Date("November 14, 2026 00:00:00").getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countdownDate - now;
 
     // add +1 to var days to simulate leap year
-    // var days = Math.floor(distance / (1000 * 60 * 60 * 24) + 1);
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24) + 1);
+    // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
@@ -62,3 +62,22 @@ var x = setInterval(function() {
         document.getElementById("clock").innerHTML = "00:00:00:00";
     }
 }, 1000);
+
+
+// refresh webpage at midnight
+function refreshAt(hours, minutes, seconds) {
+    var now = new Date();
+    var then = new Date();
+
+    if(now.getHours() > hours ||
+       (now.getHours() == hours && now.getMinutes() > minutes) ||
+        now.getHours() == hours && now.getMinutes() == minutes && now.getSeconds() >= seconds) {
+        then.setDate(now.getDate() + 1);
+    }
+    then.setHours(hours);
+    then.setMinutes(minutes);
+    then.setSeconds(seconds);
+
+    var timeout = (then.getTime() - now.getTime());
+    setTimeout(function() { window.location.reload(true); }, timeout);
+};
