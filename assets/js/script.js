@@ -61,6 +61,11 @@ var x = setInterval(function() {
         clearInterval(x);
         document.getElementById("clock").innerHTML = "00:00:00:00";
     }
+
+    if (days > 364) {
+        clearInterval(x);
+        document.getElementById("clock").innerHTML = "365:00:00:00";
+    }
 }, 1000);
 
 
